@@ -47,3 +47,7 @@ h4 {
 a:hover {
     color: #b1b1b1;
 }
+
+.redNavBar a:hover {
+    color: rgb(255, 110, 110);
+}

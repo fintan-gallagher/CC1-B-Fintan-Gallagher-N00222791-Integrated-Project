@@ -93,7 +93,7 @@ catch (Exception $ex) {
             </div>
             <div class="width-12 articleHeading">
                 <h1><?=$story->headline ?></h1>
-                <h2><?=$story->category_id ?></h2>
+                <h2 style="color: red;"><?=$category->name ?></h2>
             </div>
             
             

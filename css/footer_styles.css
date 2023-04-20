@@ -60,6 +60,8 @@ footer hr {
     font-size: 14px;
     font-weight: 600;
     letter-spacing: 1.5px;
+    font-family: 'Source Serif Pro', serif;
+    display: block;
 }
 
 .footerLists li {
@@ -70,11 +72,11 @@ footer hr {
 .footerLists a {
     font-size: 13px;
     letter-spacing: 0.5px;
-    color: rgb(160, 160, 160);
+    color: rgb(255, 0, 0);
 }
 
 .footerLists a:hover {
-    color: lightgray;
+    color: rgb(255, 110, 110);
 }
 
 .footerBlock svg {
@@ -108,7 +110,7 @@ footer hr {
     margin-top: 5px;
     font-size: 13px;
     letter-spacing: 0.5px;
-    color: rgb(160, 160, 160);
+    color: rgb(255, 0, 0);
     padding-right: 25px;
 }
 
@@ -127,6 +129,5 @@ footer hr {
     margin-top: 0px;  
     padding: 25px 0px 0px 0px 
 }
-
 
 

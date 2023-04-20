@@ -91,7 +91,7 @@ catch (Exception $ex) {
             <div class="width-7 articleHeading">
                 <h1><?=$story->headline ?></h1>
                 <h2><?=$story->artist ?></h2>
-                <h3>2023</h3>
+                <h3 style="color: red;"><?=$category->name ?></h3>
             </div>
             <div class="reviewImg width-5">
                 <img src="<?=$story->image_location ?>" />

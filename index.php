@@ -5,13 +5,17 @@ require_once "etc/config.php";
 
 
 try {
+    $navInterview = Story::findByRandomCategory(3, 1);
+    $navReview = Story::findByRandomCategory(1, 1);
+    $navFeature = Story::findByRandomCategory(4, 1);
+    $navNews = Story::findByRandomCategory(2, 1);
     $newsPanel01 = Story::findByRandomCategory(3, 1);
     $newsPanel02 = Story::findByRandomCategory(2, 1, 1);
     $landscapeReview = Story::findByCategory(1, 2);
-    $smallReview01 = Story::findByCategory(1, 2, 3);
-    $smallReview02 = Story::findByCategory(1, 2, 8);
+    $smallReview01 = Story::findByRandomCategory(1, 2, 3);
+    $smallReview02 = Story::findByRandomCategory(1, 2, 8);
     $smallFeatures = Story::orderByDate(3, 4);
-    $largeFeatures = Story::findByCategory(4, 1);
+    $largeFeatures = Story::findByRandomCategory(4, 1);
     $reviewPanel00 = Story::orderByDate(1, 4);
     $reviewPanel01 = Story::orderByDate(1, 1, 4);
     $reviewPanel02 = Story::orderByDate(1, 1, 5);
@@ -58,7 +62,9 @@ catch (Exception $e) {
             <div class="width-12">
                 <div class="logo">
                     <h1>BEST</h1>
+                    <a href="index.php">
                     <img src="images/Logos/HeaderLogo.svg">
+                    </a>
                     <h1>RECORDS</h1>
                 </div>
             </div>
@@ -69,10 +75,23 @@ catch (Exception $e) {
             <div class="categories container">
                 <div class="width-12">
                     <ul>
-                        <li><a href="featurearticle.php?id=<?= $randomId?>">INTERVIEWS</a></li>
-                        <li style="color: red;">REVIEWS</li>
-                        <li>NEWS</li>
-                        <li>FEATURES</li>
+                    <?php
+            foreach ($navInterview as $story) {?>
+                    <?php $category = Category::findById($story->category_id); ?>
+                        <li><a href="featurearticle.php?id=<?= $story->id ?>">INTERVIEWS</a></li>
+                        <?php } ?>
+                        <?php foreach ($navReview as $story) {?>
+                    <?php $category = Category::findById($story->category_id); ?>
+                        <li style="color: red;"><a href="article.php?id=<?= $story->id ?>">REVIEWS</a></li>
+                        <?php } ?>
+                        <?php foreach ($navNews as $story) {?>
+                    <?php $category = Category::findById($story->category_id); ?>
+                        <li><a href="featurearticle.php?id=<?= $story->id ?>">NEWS</a></li>
+                        <?php } ?>
+                        <?php foreach ($navFeature as $story) {?>
+                    <?php $category = Category::findById($story->category_id); ?>
+                        <li><a href="featurearticle.php?id=<?= $story->id ?>">FEATURES</a></li>
+                        <?php } ?>
                     </ul>
                 </div>
             </div>
