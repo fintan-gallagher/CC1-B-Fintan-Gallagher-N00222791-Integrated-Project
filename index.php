@@ -82,7 +82,7 @@ catch (Exception $e) {
                         <?php } ?>
                         <?php foreach ($navReview as $story) {?>
                     <?php $category = Category::findById($story->category_id); ?>
-                        <li style="color: red;"><a href="article.php?id=<?= $story->id ?>">REVIEWS</a></li>
+                        <li class="redNavBar" style="color: red;"><a href="article.php?id=<?= $story->id ?>">REVIEWS</a></li>
                         <?php } ?>
                         <?php foreach ($navNews as $story) {?>
                     <?php $category = Category::findById($story->category_id); ?>

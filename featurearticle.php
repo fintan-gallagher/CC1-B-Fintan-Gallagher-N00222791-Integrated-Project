@@ -126,7 +126,7 @@ catch (Exception $ex) {
                 foreach ($smallReviews as $story) {?>
                 <?php $category = Category::findById($story->category_id); ?>
                 <div class="width-4 sidePanel">
-                    <img src="<?= $story->image_location ?>" />
+                <a href="article.php?id=<?= $story->id ?>"> <img src="<?= $story->image_location ?>" /></a>
                     <div class="panelTxt">
                         <h5><a href="article.php?id=<?= $story->id ?>"><?= $story->headline ?></a></h5>
                         <h6><?= $story->artist ?></h6>
@@ -144,7 +144,7 @@ catch (Exception $ex) {
                 foreach ($smallInterviews as $story) {?>
                 <?php $category = Category::findById($story->category_id); ?>
                 <div class="width-4 sidePanel">
-                    <img src="<?= $story->image_location ?>" />
+                <a href="featurearticle.php?id=<?= $story->id ?>"><img src="<?= $story->image_location ?>" /></a>
                     <div class="panelTxt">
                         <h5><a href="featurearticle.php?id=<?= $story->id ?>"><?= $story->headline ?></a></h5>
                         <h6>By <span style="color: red;"><?=$story->author ?></h6>
@@ -160,7 +160,7 @@ catch (Exception $ex) {
                 foreach ($smallFeatures as $story) {?>
                 <?php $category = Category::findById($story->category_id); ?>
                 <div class="width-4 sidePanel">
-                    <img src="<?= $story->image_location ?>" />
+                <a href="featurearticle.php?id=<?= $story->id ?>"><img src="<?= $story->image_location ?>" /></a>
                     <div class="panelTxt">
                         <h5><a href="featurearticle.php?id=<?= $story->id ?>"><?= $story->headline ?></a></h5>
                         <h6>By <span style="color: red;"><?=$story->author ?></h6>
