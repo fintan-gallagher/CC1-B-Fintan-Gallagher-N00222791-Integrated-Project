@@ -1,0 +1,67 @@
+.blackToolbar {
+    background-color: #fefff9;
+}
+
+header .container {
+    padding-top: 5px;
+    padding-bottom: 0px;
+    justify-content: space-between;
+}
+
+.titleHeader .container {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 80px;
+}
+
+.logo h1 {
+    font-family: 'Outfit', sans-serif;
+    margin: 0px 20px 0px 20px;
+    padding: 0px;
+}
+
+.logo img {
+    height: 150px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.storeSVGs {
+    margin-top: 20px;
+}
+
+.storeSVGs svg {
+    margin: 5px 5px 20px 5px;
+    height: 20px;
+}
+
+.containerFull hr {
+    border-top: 1px lightgray;
+}
+
+.containerFull .container {
+   padding-top: 0px;
+   padding-bottom: 0px;
+}
+
+.categories ul {
+    display: flex;
+    justify-content: space-evenly;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.categories li {
+    font-family: 'Outfit', sans-serif;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}

@@ -1,0 +1,132 @@
+footer {
+    background: #f8faf1;
+}
+
+footer hr {
+    border-top: 1px rgb(126, 126, 126);
+}
+
+.mailingList h2 {
+    font-size: 19px;
+    letter-spacing: 4px;
+    font-weight: 600;
+}
+
+.mailingList p {
+    width: 330px;
+    margin-top: 25px;
+    font-size: 14px;
+    letter-spacing: 1px;
+    line-height: 20px;
+}
+
+.mailingList h4 {
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.searchBox input {
+    width: -webkit-fill-available;
+    margin: 10px 10px 15px 0px;
+    padding: 10px 30px 10px 30px;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #b1b1b1;
+}
+
+.searchBox input:focus-visible {
+    outline: none;
+}
+
+.searchBox svg {
+    margin-right: 20px;
+}
+
+.searchButton {
+    margin-top: 35px;
+}
+
+.searchButton a {
+    background-color: #e3e3e3;
+    padding: 15px 25px 15px 25px;
+    font-size: 13px;
+    letter-spacing: 1px;
+    font-weight: 700;
+    color: gray;
+}
+
+.footerLists h3 {
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+}
+
+.footerLists li {
+    padding-top: 15px;
+    font-family: 'Outfit', sans-serif;
+}
+
+.footerLists a {
+    font-size: 13px;
+    letter-spacing: 0.5px;
+    color: rgb(160, 160, 160);
+}
+
+.footerLists a:hover {
+    color: lightgray;
+}
+
+.footerBlock svg {
+    position: absolute;
+}
+
+.footerBlock h4 {
+    margin-left: 50px;
+    padding-top: 10px;
+    font-size: 15px;
+}
+
+.bottomOfFooter {
+    align-items: baseline;
+}
+
+.bottomOfFooter a {
+    font-family: 'Outfit', sans-serif;
+}
+
+.paymentRibbon svg {
+    width: 50px; 
+}
+
+
+.policies {
+    margin-right: 95px;
+}
+
+.policies a {
+    margin-top: 5px;
+    font-size: 13px;
+    letter-spacing: 0.5px;
+    color: rgb(160, 160, 160);
+    padding-right: 25px;
+}
+
+.copyright {
+    display: flex;
+    justify-content: flex-end;
+}
+
+
+.paymentRibbon p {
+    font-size: 13px;
+    letter-spacing: 1px;
+    color: rgb(190, 190, 190);
+    width: auto; 
+    margin-bottom: 0px;
+    margin-top: 0px;  
+    padding: 25px 0px 0px 0px 
+}
+
+
+

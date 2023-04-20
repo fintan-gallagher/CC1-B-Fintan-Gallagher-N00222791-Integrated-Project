@@ -1,0 +1,19 @@
+.reviews {
+    background: #f8faf1;
+}
+
+.reviews p {
+    padding: 10px 0px 0px 0px;
+}
+
+.reviews h3 {
+    padding: 10px 0px 0px 0px;
+    font-weight: 700;    
+}
+
+.reviews h4 {
+    padding: 10px 0px 0px 0px;
+    font-weight: 500;
+    color: #636363;    
+}
+

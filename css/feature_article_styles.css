@@ -1,0 +1,107 @@
+.articleHeadingLine {
+    border-top: 0.25px solid;
+    border-bottom: 0.25px solid;
+    color: #1c1c1c;  
+}
+
+.articleHeading {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.articleHeading h1, h2, h3 {
+    display: flex;
+    justify-content: center;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+.articleHeading h2, h3 {
+    font-family: 'Outfit', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+}
+
+.byline h5 {
+    font-family: 'Outfit', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+}
+
+.articleHeading h1 {
+    font-size: 50px;
+    padding-right: 0px;
+    text-align: center;
+}
+
+.articleHeading h2 {
+    font-size: 30px;
+}
+
+.articleHeading h3 {
+    font-size: 25px;
+}
+
+.subheading h4 {
+    font-family: 'Outfit', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    text-align: center;
+    line-height: 20px;
+}
+
+.byline h5 {
+    text-align: center;
+}
+
+.articleText p {
+    font-family: 'Source Serif Pro', serif;
+    color: #363636;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 25px;
+    font-size: 18px;
+    padding-top:10px;
+}
+
+.sidePanel {
+    display: flex;
+    align-items: center;
+    padding-bottom: 10px;
+}
+
+.panelTxt {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-top:30px;
+}
+
+.panelTxt h5 {
+    font-family: 'Source Serif Pro', serif;
+    font-style: normal;
+    font-weight: 700; 
+    font-style: italic;
+    padding: 0px 0px 10px 50px;
+    margin: 0px;
+}
+
+.panelTxt h6 {
+    font-family: 'Outfit', sans-serif;
+    font-style: normal;
+    font-weight: 500; 
+    padding: 10px 0px 10px 50px;
+    font-size: 13px;
+    margin: 0px;
+}
+
+.sidePanel img {
+    max-width: 71px;
+    margin-top: 20px;
+}
+
+.reviewImg {
+    display: flex;
+    justify-content: center;
+}
