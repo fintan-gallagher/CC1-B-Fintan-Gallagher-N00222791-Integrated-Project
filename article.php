@@ -104,7 +104,8 @@ catch (Exception $ex) {
         <div class="container">
             <div class="byline width-12">
                 <h5>By <span style="color: red;"><?=$story->author ?></span></h5>
-                <h5>Reviewed: <span style="color: red;">April 25, 2023</span></h5>
+                <?php $date = new DateTime($story->date_posted); $result = $date->format('jS M, Y'); ?>
+                <h5>Reviewed: <span style="color: red;"><?= $result ?></span></h5>
             </div>
 
             <div class="subheading width-12">

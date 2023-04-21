@@ -20,6 +20,7 @@ try {
     $reviewPanel01 = Story::orderByDate(1, 1, 4);
     $reviewPanel02 = Story::orderByDate(1, 1, 5);
     $reviewPanel03 = Story::orderByDate(1, 4, 6);
+    $logoReview = Story::findByRandomCategory(1,1);
 }
 catch (Exception $e) {
     echo $e->getMessage();
@@ -125,7 +126,8 @@ catch (Exception $e) {
             <a href="featurearticle.php?id=<?= $story->id ?>"><img src="<?= $story->image_location ?>" /></a>
                 <h2><a href="featurearticle.php?id=<?= $story->id ?>"><?= $story->headline ?></a></h2>
                 <p>by <span style="color: red;"><?= $story->author?></span></p>
-                <p><?= $story->date_posted ?></p>
+                <?php $date = new DateTime($story->date_posted); $result = $date->format('jS M, Y'); ?>
+                <p><?= $result ?></p>
             </div>
             <?php } ?>
 
@@ -157,7 +159,8 @@ catch (Exception $e) {
             <a href="featurearticle.php?id=<?= $story->id ?>"><img src="<?= $story->image_location ?>" /></a>
                 <h2><a href="featurearticle.php?id=<?= $story->id ?>"><?= $story->headline ?></a></h2>
                 <p>by <span style="color: red;"><?= $story->author?></span></p>
-                <p><?= $story->date_posted ?></p>
+                <?php $date = new DateTime($story->date_posted); $result = $date->format('jS M, Y'); ?>
+                <p><?= $result ?></p>
             </div>
             <?php } ?>
 
@@ -229,8 +232,11 @@ catch (Exception $e) {
 
             <div class="width-1"></div>
 
+            <?php
+        foreach ($logoReview as $story) {?>
+            <?php $category = Category::findById($story->category_id); ?>
             <div class="width-4">
-                <a href="index.php">
+                <a href="article.php?id=<?= $story->id ?>">
                 <svg width="379" height="380" viewBox="0 0 353 380" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <rect width="353" height="353" fill="#FF3530" />
                     <path d="M353 199.581L150.704 4.19194e-05L353 5.96046e-05L353 199.581Z" fill="#f8faf1" />
@@ -241,6 +247,7 @@ catch (Exception $e) {
                 </svg>
                 </a>
             </div>
+            <?php } ?>
 
             <div class="width-1"></div>
 
