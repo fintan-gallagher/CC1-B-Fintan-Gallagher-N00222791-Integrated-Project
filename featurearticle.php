@@ -50,7 +50,7 @@ catch (Exception $ex) {
     <link rel="stylesheet" href="css/header_styles.css">
     <link rel="stylesheet" href="css/footer_styles.css">
 
-    <title>Review</title>
+    <title><?= $story->headline ?></title>
 
 </head>
 
