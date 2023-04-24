@@ -2,7 +2,7 @@
 namespace bestnewrecordss;
 
 define("APP_ROOT", dirname(__DIR__));
-define("APP_URL", "http://localhost/CC-Y1-WebDev/wineshop");
+define("APP_URL", "http://localhost/Best_New_Records_PHP");
 
 spl_autoload_register(function ($class) {
     $class_path = str_replace('\\', '/', $class);
